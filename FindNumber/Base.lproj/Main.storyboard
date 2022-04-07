@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The game started" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0H2-5E-8Qe">
-                                <rect key="frame" x="97" y="114" width="230" height="34"/>
+                                <rect key="frame" x="92" y="79" width="230" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
                                 <nil key="textColor"/>
@@ -248,11 +248,20 @@
                                     <action selector="pressButton:" destination="CyS-zV-RtY" eventType="touchUpInside" id="G1K-AW-kOQ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3m-YR-xBO">
+                                <rect key="frame" x="117" y="137" width="205" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dnV-EE-0Nx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="nextDigit" destination="h3m-YR-xBO" id="J2q-MN-q9k"/>
+                        <outlet property="statusLabel" destination="0H2-5E-8Qe" id="vgL-Bl-6rd"/>
                         <outletCollection property="buttons" destination="f5x-K8-Kdu" collectionClass="NSMutableArray" id="Ixm-S3-uJh"/>
                         <outletCollection property="buttons" destination="CzN-sz-gnk" collectionClass="NSMutableArray" id="WUo-DK-5li"/>
                         <outletCollection property="buttons" destination="J7V-lJ-LoP" collectionClass="NSMutableArray" id="exf-F0-sIO"/>
